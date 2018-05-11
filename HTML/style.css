@@ -1,0 +1,76 @@
+/* CSS Document */
+
+:root{
+	--headerHeight: 65px;
+}
+
+
+
+html,body{
+	margin: 0px;
+	padding: 0px;
+}
+
+#header {
+	
+	width: 100%;
+	height: var(--headerHeight);
+	position: fixed;
+	box-shadow: 0px 2px 2px 0px grey;
+}
+
+#header-logo {
+	height: 100%;
+	width: var(--headerHeight);
+	background-color: purple;
+
+}
+
+#header-menu {
+	height: 25px;
+	bottom: 2.5px;
+	left: var(--headerHeight);
+	position: absolute;
+	display: flex;
+}
+
+#header-title {
+	height: 25px;
+	min-width: 100px;
+	top: 0;
+	left: var(--headerHeight);
+	position: absolute;
+	padding: 0 5px;
+	
+	display: block;
+	font-size: 1.7em;
+	font-family: Helvetica, Gotham, "Helvetica Neue", Arial, "sans-serif";
+	font-weight: bold;
+}
+
+#header-menu *:active{
+	--headerSelected: green;
+	background-color: var(--headerSelected);
+}
+not(#header-menu *):active{
+	--headerSelected: black;
+}
+
+
+
+#header-menu *{	
+	font-family: Helvetica, Gotham, "Helvetica Neue", Arial, "sans-serif";
+	height: 100%;
+	padding: 0px 5px;
+	line-height: 25px;
+	font-size: 13px;
+	user-select: none;
+	-moz-user-select: none;
+	background-color: var(--headerSelected);
+
+}
+
+#header-menu *:hover{
+	background-color: #EBEBEB;
+}
+
