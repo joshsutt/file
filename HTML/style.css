@@ -1,10 +1,5 @@
 /* CSS Document */
 
-:root{
-	--headerHeight: 65px;
-}
-
-
 
 html,body{
 	margin: 0px;
@@ -14,14 +9,15 @@ html,body{
 #header {
 	
 	width: 100%;
-	height: var(--headerHeight);
+	height: 65px;
 	position: fixed;
-	box-shadow: 0px 2px 2px 0px grey;
+	box-shadow: 0px 2px 5px 0px #C0C0C0;
+	z-index: 1;
 }
 
 #header-logo {
 	height: 100%;
-	width: var(--headerHeight);
+	width: 65px;
 	background-color: purple;
 
 }
@@ -29,36 +25,35 @@ html,body{
 #header-menu {
 	height: 25px;
 	bottom: 2.5px;
-	left: var(--headerHeight);
+	left: 67.5px;
 	position: absolute;
-	display: flex;
 }
 
 #header-title {
 	height: 25px;
 	min-width: 100px;
-	top: 0;
-	left: var(--headerHeight);
+	top: 7px;
+	left: 65px;
 	position: absolute;
 	padding: 0 5px;
 	
 	display: block;
 	font-size: 1.7em;
 	font-family: Helvetica, Gotham, "Helvetica Neue", Arial, "sans-serif";
-	font-weight: bold;
-}
-
-#header-menu *:active{
-	--headerSelected: green;
-	background-color: var(--headerSelected);
-}
-not(#header-menu *):active{
-	--headerSelected: black;
+	font-weight: 500;
+	user-select: none;
+	-moz-user-select: none;
 }
 
 
 
-#header-menu *{	
+
+.header-menu-item:hover{
+	background-color: #EBEBEB;
+}
+
+
+.header-menu-item{	
 	font-family: Helvetica, Gotham, "Helvetica Neue", Arial, "sans-serif";
 	height: 100%;
 	padding: 0px 5px;
@@ -66,11 +61,84 @@ not(#header-menu *):active{
 	font-size: 13px;
 	user-select: none;
 	-moz-user-select: none;
-	background-color: var(--headerSelected);
+	position: relative;
+	display: inline-block;
 
 }
 
-#header-menu *:hover{
+.options{
+	position: absolute;
+	box-shadow: -0.5px 0.5px 3px 1px grey;
+	z-index: 1;
+	display: none;
+	width: auto;
+	background-color: white;
+	left:0;
+}
+
+.header-menu-item:active .options{
+	display: block;
+}
+
+.options:hover{
+	display: block;
+}
+
+.option{
+	padding: 2px 10px;
+	width: auto;
+	white-space: nowrap;
+}
+
+.option:hover{
 	background-color: #EBEBEB;
 }
 
+#logo-svg {
+	margin: 10px;
+}
+
+#toolbar {
+	height: 35px;
+	width: 100%;
+	position: fixed;
+	top: 65px;
+	box-shadow: 0px 2px 5px 0px #C0C0C0;
+	z-index: 0;
+}
+
+#header-actionBar {
+	width: 100px;
+	height: 100%;
+	background-color: white;
+	box-shadow: -4px 2px 5px 0px #C0C0C0;
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	right: 0;
+	top: 0;	
+}
+
+#header-export {
+	padding: 10px 15px;
+	border-radius: 5px;
+	background-color: purple;
+	color: white;
+	font-weight: 600;
+	font-family: Helvetica, Gotham, "Helvetica Neue", Arial, "sans-serif";
+	user-select: none;
+	-moz-user-select:none;
+
+}
+
+#header-export:hover {
+	box-shadow: -1px 1px 5px 0px grey;
+}
+
+#header-export:active {
+	box-shadow: 0.5px -0.5px 1px 1px #444444 inset;
+	background-color: #700070
+}
