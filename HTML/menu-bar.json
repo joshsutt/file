@@ -1,0 +1,37 @@
+[{
+	"title": "File",
+	"content": [{
+		"title": "New",
+		"content": [{
+			"title": "Pack"
+		}, {
+			"title": "Recipe"
+		}, {
+			"title": "Advancement"
+		}]
+	}, {
+		"title": "Open"
+	}, {
+		"title": "Open Recent"
+	}]
+}, {
+	"title": "Edit",
+	"content": [{
+		"title": "Undo"
+	}, {
+		"title": "Redo"
+	}, {
+		"title": "Cut"
+	}, {
+		"title": "Copy"
+	}, {
+		"title": "Paste"
+	}]
+}, {
+	"title": "Help",
+	"content": [{
+		"title": "<input type='search' placeholder='Search'>"
+	}, {
+		"title": "Github"
+	}]
+}]

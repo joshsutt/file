@@ -22,12 +22,6 @@ html,body{
 
 }
 
-#header-menu {
-	height: 25px;
-	bottom: 2.5px;
-	left: 67.5px;
-	position: absolute;
-}
 
 #header-title {
 	height: 25px;
@@ -43,17 +37,22 @@ html,body{
 	font-weight: 500;
 	user-select: none;
 	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+
+#menu-bar {
+	height: 25px;
+	bottom: 2.5px;
+	left: 67.5px;
+	position: absolute;
 }
 
 
 
 
-.header-menu-item:hover{
-	background-color: #EBEBEB;
-}
 
-
-.header-menu-item{	
+.menu-bar-item{	
 	font-family: Helvetica, Gotham, "Helvetica Neue", Arial, "sans-serif";
 	height: 100%;
 	padding: 0px 5px;
@@ -61,26 +60,32 @@ html,body{
 	font-size: 13px;
 	user-select: none;
 	-moz-user-select: none;
+	-webkit-user-select: none;
 	position: relative;
 	display: inline-block;
 
 }
 
-.options{
+.menu-bar-item:hover{
+	background-color: #EBEBEB;
+}
+
+.options1{
 	position: absolute;
 	box-shadow: -0.5px 0.5px 3px 1px grey;
 	z-index: 1;
+	display: block;
 	display: none;
 	width: auto;
 	background-color: white;
 	left:0;
 }
 
-.header-menu-item:active .options{
+.menu-bar-item:active .options1{
 	display: block;
 }
 
-.options:hover{
+.options1:hover{
 	display: block;
 }
 
@@ -92,6 +97,22 @@ html,body{
 
 .option:hover{
 	background-color: #EBEBEB;
+}
+
+.options2{
+	position: absolute;
+	box-shadow: -0.5px 0.5px 3px 1px grey;
+	z-index: 1;
+	display: block;
+	display: none;
+	width: auto;
+	background-color: white;
+	left:100%;
+	top: 0;
+}
+
+.option:hover .options2{
+	display: block;
 }
 
 #logo-svg {
@@ -131,6 +152,8 @@ html,body{
 	font-family: Helvetica, Gotham, "Helvetica Neue", Arial, "sans-serif";
 	user-select: none;
 	-moz-user-select:none;
+	-webkit-user-select:none;
+	
 
 }
 
@@ -141,4 +164,18 @@ html,body{
 #header-export:active {
 	box-shadow: 0.5px -0.5px 1px 1px #444444 inset;
 	background-color: #700070
+}
+
+#rClick-Menu{
+	position: fixed;
+	box-shadow: -0.5px 0.5px 3px 1px grey;
+	display: block;
+	display: none;
+	width: auto;
+	background-color: white;
+	left:200px;
+	top: 100px;
+	user-select: none;
+	-moz-user-select:none;
+	-webkit-user-select:none;
 }
