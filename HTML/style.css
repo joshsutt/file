@@ -75,15 +75,11 @@ html,body{
 	box-shadow: -0.5px 0.5px 3px 1px grey;
 	z-index: 1;
 	display: block;
-	display: none;
 	width: auto;
 	background-color: white;
 	left:0;
 }
 
-.menu-bar-item:active .options1{
-	display: block;
-}
 
 .options1:hover{
 	display: block;
