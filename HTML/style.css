@@ -4,6 +4,10 @@
 html,body{
 	margin: 0px;
 	padding: 0px;
+	font-family: Helvetica, Gotham, "Helvetica Neue", Arial, "sans-serif";
+
+
+
 }
 
 #header {
@@ -89,6 +93,7 @@ html,body{
 	padding: 2px 10px;
 	width: auto;
 	white-space: nowrap;
+	position: relative;
 }
 
 .option:hover{
@@ -107,7 +112,7 @@ html,body{
 	top: 0;
 }
 
-.option:hover .options2{
+.option:hover > .options2{
 	display: block;
 }
 
@@ -166,7 +171,6 @@ html,body{
 	position: fixed;
 	box-shadow: -0.5px 0.5px 3px 1px grey;
 	display: block;
-	display: none;
 	width: auto;
 	background-color: white;
 	left:200px;

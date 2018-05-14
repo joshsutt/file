@@ -9,7 +9,7 @@ var menuBar = {
 		});
 
 		$(":root").on("click", function (e) {
-			if (!$(e.target).hasClass("option")) {
+			if (!$(e.target).hasClass("no-hide-menu")) {
 				$(".menu-bar-item").not(e.target).children().hide();
 			}
 		});
@@ -22,7 +22,7 @@ var menuBar = {
 	},
 
 	process: function (data, index) {
-		var mainClass = "option";
+		var mainClass = "option no-hide-menu";
 		var contentClass = "options2 options";
 		var str = "";
 		if (index == 0) {
@@ -35,6 +35,9 @@ var menuBar = {
 			var title = data[i].title;
 			if (data[i].content != undefined) {
 				content = `<div class="${contentClass}">${this.process(data[i].content, index+1)}</div>`;
+			}
+			if (data[i].click != undefined) {
+				click = `onClick="events.${data[i].click}()"`;
 			}
 			str += `<div ${click} class="${mainClass}">${title}${content}</div>`;
 		}

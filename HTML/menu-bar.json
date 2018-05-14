@@ -3,21 +3,31 @@
 	"content": [{
 		"title": "New",
 		"content": [{
-			"title": "Pack"
+			"title": "Pack",
+			"click": "newPack"
 		}, {
-			"title": "Recipe"
+			"title": "Recipe",
+			"content": [{
+				"title": "Crafting"
+			}, {
+				"title": "Furnace"
+			}]
 		}, {
 			"title": "Advancement"
 		}]
 	}, {
 		"title": "Open"
 	}, {
-		"title": "Open Recent"
+		"title": "Open Recent",
+		"content": [{
+			"title": "thing.mcdp"
+		}]
 	}]
 }, {
 	"title": "Edit",
 	"content": [{
-		"title": "Undo"
+		"title": "Undo",
+		"click": "undo"
 	}, {
 		"title": "Redo"
 	}, {
@@ -30,7 +40,7 @@
 }, {
 	"title": "Help",
 	"content": [{
-		"title": "<input type='search' placeholder='Search'>"
+		"title": "<input class='no-hide-menu' type='search' placeholder='Search'>"
 	}, {
 		"title": "Github"
 	}]
