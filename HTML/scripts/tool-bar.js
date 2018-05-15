@@ -6,8 +6,7 @@ var menuBar = {
 			me.update();
 		});
 	},
-	update: function () {
-	},
+	update: function () {},
 
 	process: function (data, index) {
 		/*
@@ -33,5 +32,5 @@ var menuBar = {
 		return str;
 		*/
 	}
-	
+
 };
