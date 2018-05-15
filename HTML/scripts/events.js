@@ -1,10 +1,10 @@
 var events = {
-	
+
 	newPack: function () {
 		console.log("Created New Pack");
 	},
-	undo: function(){
+	undo: function () {
 		console.log("Z");
 	}
-	
+
 };

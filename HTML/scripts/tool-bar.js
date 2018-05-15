@@ -1,27 +1,16 @@
 var menuBar = {
 	init: function () {
 		var me = this;
-		$.getJSON("config/menu-bar.json", function (myJSON) {
+		$.getJSON("config/tool-bar.json", function (myJSON) {
 			me.data = myJSON;
 			me.update();
-			$(".menu-bar-item > .options1").hide();
-			$(".menu-bar-item").on("click", me.itemClick);
 		});
-
-		$(":root").on("click", function (e) {
-			if (!$(e.target).hasClass("no-hide-menu")) {
-				$(".menu-bar-item").not(e.target).children().hide();
-			}
-		});
-	},
-	itemClick: function (e) {
-		$(e.target).children(".options1").toggle();
 	},
 	update: function () {
-		$("#menu-bar").html(menuBar.process(this.data, 0));
 	},
 
 	process: function (data, index) {
+		/*
 		var mainClass = "option no-hide-menu";
 		var contentClass = "options2 options";
 		var str = "";
@@ -42,5 +31,7 @@ var menuBar = {
 			str += `<div ${click} class="${mainClass}">${title}${content}</div>`;
 		}
 		return str;
+		*/
 	}
+	
 };
