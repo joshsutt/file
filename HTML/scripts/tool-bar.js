@@ -1,4 +1,4 @@
-var menuBar = {
+var toolBar = {
 	init: function () {
 		var me = this;
 		$.getJSON("config/tool-bar.json", function (myJSON) {

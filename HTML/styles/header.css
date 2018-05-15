@@ -109,6 +109,13 @@ body{
 	background-color: #EBEBEB;
 }
 
+.options-seperator{
+	height: 0px;
+	width: calc(100% - 12px);
+	border-bottom: thin solid lightgrey;
+	margin: 5px 5px
+}
+
 .options2{
 	position: absolute;
 	box-shadow: -0.5px 0.5px 3px 1px grey;

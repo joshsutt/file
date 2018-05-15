@@ -40,6 +40,9 @@ var menuBar = {
 				click = `onClick="events.${data[i].click}()"`;
 			}
 			str += `<div ${click} class="${mainClass}">${title}${content}</div>`;
+			if(i%2==0 && index == 1){
+				str += `<div class="options-seperator"></div>`
+			}
 		}
 		return str;
 	}
