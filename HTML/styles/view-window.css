@@ -1,0 +1,6 @@
+.body{
+	position: fixed;
+	top: calc(var(--header-hight) + var(--toolbar-height));
+	height: calc(100vh - (var(--header-hight) + var(--toolbar-height)));
+	width: 100%;
+}

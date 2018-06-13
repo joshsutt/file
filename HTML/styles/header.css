@@ -5,20 +5,6 @@
 	--toolbar-height: 35px;
 }
 
-
-
-html,body{
-	margin: 0px;
-	padding: 0px;
-	font-family: Helvetica, Gotham, "Helvetica Neue", Arial, "sans-serif";
-
-
-
-}
-body{
-	height: 100vh;
-}
-
 #header {
 	
 	width: 100%;
@@ -196,10 +182,4 @@ body{
 	-webkit-user-select:none;
 	font-size: 13px;
 }
-.body{
-	position: fixed;
-	top: calc(var(--header-hight) + var(--toolbar-height));
-	height: calc(100vh - (var(--header-hight) + var(--toolbar-height)));
-	width: 100%;
-	overflow-y: scroll;
-}
+
