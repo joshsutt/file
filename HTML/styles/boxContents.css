@@ -1,2 +1,55 @@
 /* CSS Document */
-
+:root {
+ --tabBarHeight: 25px;
+}
+.tab > input {
+	display: none;
+}
+.box {
+	position: relative;
+	background-color: gray;
+}
+.tab {
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+}
+.tabBar {
+	background-color: black;
+	position: static;
+	width: 100%;
+	height: var(--tabBarHeight);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+input +*+.tabContent {
+	display: none;
+}
+input:checked +*+.tabContent {
+	background-color: purple;
+	position: absolute;
+	height: calc(100% - var(--tabBarHeight));
+	width: 100%;
+	display: block;
+	top: var(--tabBarHeight);
+	left: 0px;
+}
+label {
+	font-family: Helvetica, Gotham, "Helvetica Neue", Arial, "sans-serif";
+	padding: 1px 10px;
+	font-size: 14px;
+	height: calc(100% - 7px);
+	background-color: blueviolet;
+	margin: 4px 0px 0px 2px;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+input + label {
+	color: black;
+}
+input:checked + label {
+	color: white;
+}
