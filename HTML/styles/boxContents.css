@@ -41,15 +41,15 @@ label {
 	padding: 1px 10px;
 	font-size: 14px;
 	height: calc(100% - 7px);
-	background-color: blueviolet;
+	background-color: lightgray;
 	margin: 4px 0px 0px 2px;
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-select: none;
 }
 input + label {
-	color: black;
+	
 }
 input:checked + label {
-	color: white;
+	background-color: darkgray;
 }
