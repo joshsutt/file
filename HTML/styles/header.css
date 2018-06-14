@@ -127,7 +127,7 @@
 	width: 100%;
 	position: absolute;
 	top: 100%;
-	box-shadow: 0px 2px 5px 0px #C0C0C0;
+	/*box-shadow: 0px 2px 5px 0px #C0C0C0;*/
 	z-index: 0;
 }
 

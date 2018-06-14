@@ -1,13 +1,16 @@
 /* CSS Document */
 :root {
- --tabBarHeight: 25px;
+	--tabBarHeight: 25px;
+	--superDark: #111111;
+	--dark: #333333;
+	--light: #555555;
+
 }
 .tab > input {
 	display: none;
 }
 .box {
 	position: relative;
-	background-color: gray;
 }
 .tab {
 	display: flex;
@@ -15,41 +18,45 @@
 	align-content: space-around;
 }
 .tabBar {
-	background-color: black;
+	background-color: var(--dark);
 	position: static;
-	width: 100%;
+	width: calc(100% - 2px);
 	height: var(--tabBarHeight);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
+	border: var(--superDark) thin solid;
 }
 input +*+.tabContent {
 	display: none;
 }
 input:checked +*+.tabContent {
-	background-color: purple;
+	background-color: white;
 	position: absolute;
-	height: calc(100% - var(--tabBarHeight));
+	height: calc(100% - (var(--tabBarHeight) + 10px));
 	width: 100%;
 	display: block;
-	top: var(--tabBarHeight);
+	top: calc(var(--tabBarHeight) + 10px);
 	left: 0px;
 }
 label {
 	font-family: Helvetica, Gotham, "Helvetica Neue", Arial, "sans-serif";
-	padding: 1px 10px;
+	padding: 3px 10px;
 	font-size: 14px;
-	height: calc(100% - 7px);
-	background-color: lightgray;
-	margin: 4px 0px 0px 2px;
+	height: calc(100% - 4px);
+	background-color: var(--dark);
+	
+	border-right: var(--superDark) thin solid; 
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-select: none;
+	color: #cccccc;
+	font-weight: 700;
 }
 input + label {
 	
 }
 input:checked + label {
-	background-color: darkgray;
+	background-color: var(--light);
 }
