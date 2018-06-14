@@ -1,12 +1,12 @@
 /* CSS Document */
 :root {
-	--tabBarHeight: 25px;
+	--tabBarHeight: 20px;
 	--superDark: #111111;
 	--dark: #333333;
-	--light: #555555;
+	--light: #444444;
 
 }
-.tab > input {
+.tab > .tabSelected, .jrTab > input {
 	display: none;
 }
 .box {
@@ -17,33 +17,62 @@
 	flex-direction: column;
 	align-content: space-around;
 }
+.jrTab {
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+}
+
+
 .tabBar {
 	background-color: var(--dark);
 	position: static;
 	width: calc(100% - 2px);
-	height: var(--tabBarHeight);
+	height: calc(var(--tabBarHeight) - 2px);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: flex-start;
 	border: var(--superDark) thin solid;
 }
-input +*+.tabContent {
+.tabSelected +*+.tabContent, .jrTabSelected +*+ .jrTabContent {
 	display: none;
 }
-input:checked +*+.tabContent {
+.tabSelected:checked +*+.tabContent {
 	background-color: white;
 	position: absolute;
-	height: calc(100% - (var(--tabBarHeight) + 10px));
+	height: calc(100% - (var(--tabBarHeight) + 0px));
 	width: 100%;
 	display: block;
-	top: calc(var(--tabBarHeight) + 10px);
+	top: calc(var(--tabBarHeight) + 0px);
 	left: 0px;
 }
-label {
+.jrTabSelected:checked +*+.jrTabContent {
+	background-color: white;
+	position: absolute;
+	height: calc(100% - (var(--tabBarHeight) *1.5));
+	top: calc(var(--tabBarHeight) *1.5);
+	width: 100%;
+	display: block;
+	left: 0px;
+}
+.jrTabBar{
+	background-color: var(--light);
+	position: static;
+	width: calc(100% - 2px);
+	height: calc((var(--tabBarHeight)*1.5) - 1px);
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	border: var(--superDark) thin solid;
+	border-top: hidden;
+}
+
+.tabSelected + label {
 	font-family: Helvetica, Gotham, "Helvetica Neue", Arial, "sans-serif";
-	padding: 3px 10px;
-	font-size: 14px;
+	padding: 2px 10px;
+	font-size: 12px;
 	height: calc(100% - 4px);
 	background-color: var(--dark);
 	
@@ -54,9 +83,40 @@ label {
 	color: #cccccc;
 	font-weight: 700;
 }
-input + label {
-	
-}
-input:checked + label {
+.jrTabSelected + label {
+	font-family: Helvetica, Gotham, "Helvetica Neue", Arial, "sans-serif";
+	padding: 2px 10px;
+	font-size: 12px;
+	height: calc(100% - 4px);
+	border-radius: 20px;
 	background-color: var(--light);
+	margin: 5px;
+	
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	color: #cccccc;
+}
+.tabSelected:hover + label{
+	background-color: var(--light);
+}
+.tabSelected:checked + label {
+	background-color: var(--light);
+	color: white;
+}
+.tabSelected:active + label{
+	background-color: var(--superDark);
+	color: white;
+}
+
+.jrTabSelected:hover + label{
+	background-color: var(--dark);
+}
+.jrTabSelected:checked + label {
+	background-color: var(--dark);
+	color: white;
+}
+.jrTabSelected:active + label{
+	background-color: var(--superDark);
+	color: white;
 }
