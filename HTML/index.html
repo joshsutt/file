@@ -8,13 +8,18 @@
 <script src="scripts/tool-bar.js"></script>
 <script src="scripts/right-click.js"></script>
 <script src="scripts/events.js"></script>
+<script src="scripts/resize.js"></script>
 <script src="scripts/script.js"></script>
 <link href="config/menu-bar.json">
 <link href="config/tool-bar.json">
-<link rel="stylesheet" href="styles/style.css">
+<link rel="stylesheet" href="styles/fileBrowser.css">
+
 <link rel="stylesheet" href="styles/view-window.css">
 <link rel="stylesheet" href="styles/header.css">
 	<link rel="stylesheet" href="styles/boxContents.css">
+	<link rel="stylesheet" href="styles/resizeBoxes.css">
+	<link rel="stylesheet" href="styles/style.css">
+
 </head>
 
 <body>
@@ -34,8 +39,25 @@
 	<div class="option no-hide-menu">Option 2</div>
 	<div class="option no-hide-menu">Option 3</div>
 </div>
-<div class="body box">
-	<div class="tabBar"><div class="tab"><input type="radio" id="tab0" name="tab-0" value="valuable1" class="tabSelected"><label for="tab0">File Browser</label><div class="tabContent">File Tree</div></div>
+<div class="body box split" data-orientation="u">
+	<!-- <div class="tabBar"><div class="tab"><input type="radio" id="tab0" name="tab-0" value="valuable1" class="tabSelected"><label for="tab0">File Browser</label><div class="tabContent">File Tree</div></div>
+	<div class="tab"><input type="radio" id="tab1" name="tab-0" value="valuable1" class="tabSelected"><label for="tab1">Editor</label><div class="tabContent">
+		
+		<div class="jrTabBar"><div class="jrTab"><input class="jrTabSelected" type="radio" id="jrTab0" name="jrTab-0" value="valuable1"><label for="jrTab0">loop.mcfunction</label><div class="jrTabContent">effect give @a minecraft:night_vision 1</div></div>
+	<div class="jrTab"><input class="jrTabSelected" type="radio" id="jrTab1" name="jrTab-0" value="valuable1"><label for="jrTab1">killPlayers.mcfunction</label><div class="jrTabContent">kill @a</div></div>
+	<div class="jrTab"><input class="jrTabSelected" type="radio" id="jrTab2" name="jrTab-0" value="valuable1"><label for="jrTab2">up.mcfunction</label><div class="jrTabContent">tp @s ~ ~5 ~<br></div></div></div>
+		
+		</div></div>
+	<div class="tab"><input type="radio" id="tab2" name="tab-0" value="valuable1" class="tabSelected"><label for="tab2">Recipie Grid</label><div class="tabContent">[ ][ ][ ]<br>[ ][ ][ ]<br>[ ][ ][ ]<br></div></div></div>
+	-->
+	<div class="section split" data-orientation="l"  data-size="1000px">
+	<div class="section"  data-size="1000px">
+		
+		<div class="tabBar"><div class="tab"><input type="radio" id="tab0" name="tab-0" value="valuable1" class="tabSelected"><label for="tab0">File Browser</label><div class="tabContent fileBrowser">
+			
+			File Browser
+			
+			</div></div>
 	<div class="tab"><input type="radio" id="tab1" name="tab-0" value="valuable1" class="tabSelected"><label for="tab1">Editor</label><div class="tabContent">
 		
 		<div class="jrTabBar"><div class="jrTab"><input class="jrTabSelected" type="radio" id="jrTab0" name="jrTab-0" value="valuable1"><label for="jrTab0">loop.mcfunction</label><div class="jrTabContent">effect give @a minecraft:night_vision 1</div></div>
@@ -45,9 +67,19 @@
 		</div></div>
 	<div class="tab"><input type="radio" id="tab2" name="tab-0" value="valuable1" class="tabSelected"><label for="tab2">Recipie Grid</label><div class="tabContent">[ ][ ][ ]<br>[ ][ ][ ]<br>[ ][ ][ ]<br></div></div></div>
 	
+		
+		</div><div class="dragDivider"></div><div class="section"></div>
 	
+	</div><div class="dragDivider"></div><div class="section split" data-orientation="l">
+	<div class="section"  data-size="1000px"></div><div class="dragDivider"></div><div class="section split" data-orientation="l">
+	<div class="section"  data-size="1000px"></div><div class="dragDivider"></div><div class="section"></div>
+	</div>
+	</div>
 	
 	
 	</div>
 </body>
 </html>
+<!-- 
+<div class="section"  data-size="1000px"></div><div class="dragDivider"></div><div class="section"></div>
+-->

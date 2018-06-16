@@ -3,4 +3,5 @@
 	top: calc(var(--header-hight) + var(--toolbar-height));
 	height: calc(100vh - (var(--header-hight) + var(--toolbar-height)));
 	width: 100%;
+	box-shadow: -1px -1px 5px 0px lightgray;
 }

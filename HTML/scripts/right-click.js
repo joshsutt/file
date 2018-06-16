@@ -1,4 +1,4 @@
-
+/*
 $(document).ready(function(){
 	$("#rClick-Menu").hide();
 	$(":root").on("click", function(e){
@@ -15,3 +15,4 @@ $(document).ready(function(){
 	});
 	
 });
+*/

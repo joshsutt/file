@@ -6,6 +6,7 @@
 	--light: #444444;
 
 }
+
 .tab > .tabSelected, .jrTab > input {
 	display: none;
 }

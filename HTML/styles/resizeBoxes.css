@@ -1,0 +1,47 @@
+/* CSS Document */
+.split{
+	display: flex;
+	align-content: stretch;
+	align-items: stretch;
+}
+
+.split[data-orientation="u"]{
+	flex-direction: column;
+}
+.split[data-orientation="d"]{
+	flex-direction: column-reverse;
+}
+.split[data-orientation="l"]{
+	flex-direction: row;
+}
+.split[data-orientation="r"]{
+	flex-direction: row-reverse;
+}
+
+
+
+
+
+
+.split > .section{
+	flex: 1 0;
+	min-height: 100px;
+	min-width: 200px;
+	position: relative;
+
+}
+
+.split > .section:first-of-type{
+	flex:0 1;
+
+}
+
+.dragDivider{
+	background-color: var(--superDark);
+	border: 2px var(--dark) solid;
+	flex: 0 0 3px;
+	cursor: ew-resize;
+}
+.split[data-orientation="u"] > .dragDivider, .split[data-orientation="d"] > .dragDivider{
+	cursor: ns-resize;
+}

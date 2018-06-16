@@ -12,3 +12,6 @@ html,body{
 body{
 	height: 100vh;
 }
+#rClick-Menu{
+	display: none;
+}
