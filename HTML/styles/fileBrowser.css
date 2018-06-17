@@ -1,0 +1,61 @@
+/* CSS Document */
+
+.fileBrowser *{
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+
+
+.fileBrowser li > ul {
+	display: none;
+}
+
+.fileBrowser input.arrow:checked ~ ul {
+	display: inherit;
+}
+
+
+
+
+.fileBrowser ul {
+	list-style-type: none;
+}
+
+.fileBrowser input[type=checkbox],input[type=checkbox] {
+	display: none;
+}
+
+
+.fileBrowser input[type=checkbox].arrow + label {
+	background-image: url(fileIMG/arrowRight.svg);
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	padding: 0 0 0 0px;
+}
+
+.fileBrowser input[type=checkbox].arrow:checked + label {
+	background-image: url(fileIMG/arrowDown.svg);
+}
+
+.fileBrowser input[type=checkbox].file + label {
+	background-image: url(fileIMG/file.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 16px;
+	display: inline-block;
+	padding: 0 0 0 20px;
+	margin: 0 0 0 5px;
+}
+.fileBrowser input[type=checkbox].file[data-type=dir] + label{
+	background-image: url(fileIMG/folder.png);
+}
+
+.fileBrowser input[type=checkbox].file:checked + label {
+	background-color: lightgray;
+	color: black;
+}
+.fileBrowser{
+	overflow-y: scroll;
+}

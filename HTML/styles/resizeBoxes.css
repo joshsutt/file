@@ -38,8 +38,8 @@
 
 .dragDivider{
 	background-color: var(--superDark);
-	border: 2px var(--dark) solid;
-	flex: 0 0 3px;
+	border: 1px var(--dark) solid;
+	flex: 0 0 2px;
 	cursor: ew-resize;
 }
 .split[data-orientation="u"] > .dragDivider, .split[data-orientation="d"] > .dragDivider{
