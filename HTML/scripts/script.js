@@ -1,4 +1,1 @@
-// JavaScript Document
-menuBar.init();
-
-console.log($(".section").width());
+// JavaScript DocumentmenuBar.init();console.log($(".section").width());$(document).ready(function () {	$("input[type=checkbox].file + label").click(fileSelect);});function fileSelect(e) {	if (!(e.originalEvent.metaKey || e.originalEvent.ctrlKey || e.originalEvent.shiftKey)) {		$("input[type=checkbox].file").not($(e.originalEvent.target).prev()).prop("checked", false);	} else {		$("#" + $(e.originalEvent.target).attr("for")).prop("checked", true);	}}
