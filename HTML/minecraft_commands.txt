@@ -1,0 +1,435 @@
+advancement grant <targets> everything
+advancement grant <targets> from <advancement>
+advancement grant <targets> only <advancement>
+advancement grant <targets> only <advancement> <criterion>
+advancement grant <targets> through <advancement>
+advancement grant <targets> until <advancement>
+advancement revoke <targets> everything
+advancement revoke <targets> from <advancement>
+advancement revoke <targets> only <advancement>
+advancement revoke <targets> only <advancement> <criterion>
+advancement revoke <targets> through <advancement>
+advancement revoke <targets> until <advancement>
+ban <targets>
+ban <targets> <reason>
+ban-ip <target>
+ban-ip <target> <reason>
+banlist
+banlist ips
+banlist players
+blockdata <pos>
+blockdata <pos> <nbt>
+clear
+clear <targets>
+clear <targets> <item>
+clear <targets> <item> <maxCount>
+clone <begin> <end> <destination>
+clone <begin> <end> <destination> filtered <filter>
+clone <begin> <end> <destination> filtered <filter> force
+clone <begin> <end> <destination> filtered <filter> move
+clone <begin> <end> <destination> filtered <filter> normal
+clone <begin> <end> <destination> masked
+clone <begin> <end> <destination> masked force
+clone <begin> <end> <destination> masked move
+clone <begin> <end> <destination> masked normal
+clone <begin> <end> <destination> replace
+clone <begin> <end> <destination> replace force
+clone <begin> <end> <destination> replace move
+clone <begin> <end> <destination> replace normal
+data get block <pos>
+data get block <pos> <path>
+data get block <pos> <path> <scale>
+data get entity <target>
+data get entity <target> <path>
+data get entity <target> <path> <scale>
+data merge block <pos> <nbt>
+data merge entity <target> <nbt>
+data remove block <pos> <path>
+data remove entity <target> <path>
+datapack disable <name>
+datapack enable <name>
+datapack enable <name> after <existing>
+datapack enable <name> before <existing>
+datapack enable <name> first
+datapack enable <name> last
+datapack list
+datapack list available
+datapack list enabled
+debug start
+debug stop
+defaultgamemode adventure
+defaultgamemode creative
+defaultgamemode spectator
+defaultgamemode survival
+deop <targets>
+difficulty
+difficulty easy
+difficulty hard
+difficulty normal
+difficulty peaceful
+effect clear <targets>
+effect clear <targets> <effect>
+effect give <targets> <effect>
+effect give <targets> <effect> <seconds>
+effect give <targets> <effect> <seconds> <amplifier>
+effect give <targets> <effect> <seconds> <amplifier> <hideParticles>
+execute align <axes> -> execute
+execute as <targets> -> execute
+execute at <targets> -> execute
+execute if block <pos> <block> -> execute
+execute if blocks <start> <end> <destination> all
+execute if blocks <start> <end> <destination> all -> execute
+execute if blocks <start> <end> <destination> masked
+execute if blocks <start> <end> <destination> masked -> execute
+execute if entity <entities>
+execute if entity <entities> -> execute
+execute if score <target> <targetObjective> < <source> <sourceObjective>
+execute if score <target> <targetObjective> < <source> <sourceObjective> -> execute
+execute if score <target> <targetObjective> <= <source> <sourceObjective>
+execute if score <target> <targetObjective> <= <source> <sourceObjective> -> execute
+execute if score <target> <targetObjective> = <source> <sourceObjective>
+execute if score <target> <targetObjective> = <source> <sourceObjective> -> execute
+execute if score <target> <targetObjective> > <source> <sourceObjective>
+execute if score <target> <targetObjective> > <source> <sourceObjective> -> execute
+execute if score <target> <targetObjective> >= <source> <sourceObjective>
+execute if score <target> <targetObjective> >= <source> <sourceObjective> -> execute
+execute offset <pos> -> execute
+execute run ...
+execute store result block <pos> <path> byte <scale> -> execute
+execute store result block <pos> <path> double <scale> -> execute
+execute store result block <pos> <path> float <scale> -> execute
+execute store result block <pos> <path> int <scale> -> execute
+execute store result block <pos> <path> long <scale> -> execute
+execute store result block <pos> <path> short <scale> -> execute
+execute store result entity <target> <path> byte <scale> -> execute
+execute store result entity <target> <path> double <scale> -> execute
+execute store result entity <target> <path> float <scale> -> execute
+execute store result entity <target> <path> int <scale> -> execute
+execute store result entity <target> <path> long <scale> -> execute
+execute store result entity <target> <path> short <scale> -> execute
+execute store result score <targets> <objective> -> execute
+execute store success block <pos> <path> byte <scale> -> execute
+execute store success block <pos> <path> double <scale> -> execute
+execute store success block <pos> <path> float <scale> -> execute
+execute store success block <pos> <path> int <scale> -> execute
+execute store success block <pos> <path> long <scale> -> execute
+execute store success block <pos> <path> short <scale> -> execute
+execute store success entity <target> <path> byte <scale> -> execute
+execute store success entity <target> <path> double <scale> -> execute
+execute store success entity <target> <path> float <scale> -> execute
+execute store success entity <target> <path> int <scale> -> execute
+execute store success entity <target> <path> long <scale> -> execute
+execute store success entity <target> <path> short <scale> -> execute
+execute store success score <targets> <objective> -> execute
+execute unless block <pos> <block> -> execute
+execute unless blocks <start> <end> <destination> all
+execute unless blocks <start> <end> <destination> all -> execute
+execute unless blocks <start> <end> <destination> masked
+execute unless blocks <start> <end> <destination> masked -> execute
+execute unless entity <entities>
+execute unless entity <entities> -> execute
+execute unless score <target> <targetObjective> < <source> <sourceObjective>
+execute unless score <target> <targetObjective> < <source> <sourceObjective> -> execute
+execute unless score <target> <targetObjective> <= <source> <sourceObjective>
+execute unless score <target> <targetObjective> <= <source> <sourceObjective> -> execute
+execute unless score <target> <targetObjective> = <source> <sourceObjective>
+execute unless score <target> <targetObjective> = <source> <sourceObjective> -> execute
+execute unless score <target> <targetObjective> > <source> <sourceObjective>
+execute unless score <target> <targetObjective> > <source> <sourceObjective> -> execute
+execute unless score <target> <targetObjective> >= <source> <sourceObjective>
+execute unless score <target> <targetObjective> >= <source> <sourceObjective> -> execute
+experience add <targets> <amount>
+experience add <targets> <amount> levels
+experience add <targets> <amount> points
+experience query <targets> levels
+experience query <targets> points
+experience set <targets> <amount>
+experience set <targets> <amount> levels
+experience set <targets> <amount> points
+fill <from> <to> <block>
+fill <from> <to> <block> destroy
+fill <from> <to> <block> hollow
+fill <from> <to> <block> keep
+fill <from> <to> <block> outline
+fill <from> <to> <block> replace
+fill <from> <to> <block> replace <filter>
+function <name>
+gamemode adventure
+gamemode adventure <target>
+gamemode creative
+gamemode creative <target>
+gamemode spectator
+gamemode spectator <target>
+gamemode survival
+gamemode survival <target>
+gamerule announceAdvancements
+gamerule announceAdvancements <value>
+gamerule commandBlockOutput
+gamerule commandBlockOutput <value>
+gamerule disableElytraMovementCheck
+gamerule disableElytraMovementCheck <value>
+gamerule doDaylightCycle
+gamerule doDaylightCycle <value>
+gamerule doEntityDrops
+gamerule doEntityDrops <value>
+gamerule doFireTick
+gamerule doFireTick <value>
+gamerule doLimitedCrafting
+gamerule doLimitedCrafting <value>
+gamerule doMobLoot
+gamerule doMobLoot <value>
+gamerule doMobSpawning
+gamerule doMobSpawning <value>
+gamerule doTileDrops
+gamerule doTileDrops <value>
+gamerule doWeatherCycle
+gamerule doWeatherCycle <value>
+gamerule gameLoopFunction
+gamerule gameLoopFunction <value>
+gamerule keepInventory
+gamerule keepInventory <value>
+gamerule logAdminCommands
+gamerule logAdminCommands <value>
+gamerule maxCommandChainLength
+gamerule maxCommandChainLength <value>
+gamerule maxEntityCramming
+gamerule maxEntityCramming <value>
+gamerule mobGriefing
+gamerule mobGriefing <value>
+gamerule naturalRegeneration
+gamerule naturalRegeneration <value>
+gamerule randomTickSpeed
+gamerule randomTickSpeed <value>
+gamerule reducedDebugInfo
+gamerule reducedDebugInfo <value>
+gamerule sendCommandFeedback
+gamerule sendCommandFeedback <value>
+gamerule showDeathMessages
+gamerule showDeathMessages <value>
+gamerule spawnRadius
+gamerule spawnRadius <value>
+gamerule spectatorsGenerateChunks
+gamerule spectatorsGenerateChunks <value>
+give <targets> <item>
+give <targets> <item> <count>
+help
+help <command>
+kick <targets>
+kick <targets> <reason>
+kill <targets>
+list
+locate EndCity
+locate Fortress
+locate Mansion
+locate Mineshaft
+locate Monument
+locate Stronghold
+locate Temple
+locate Village
+me <action>
+msg <targets> <message>
+op <targets>
+pardon <targets>
+pardon-ip <target>
+particle <name>
+particle <name> <pos> <delta> <speed> <count>
+particle <name> <pos> <delta> <speed> <count> force
+particle <name> <pos> <delta> <speed> <count> force <viewers>
+particle <name> <pos> <delta> <speed> <count> normal
+particle <name> <pos> <delta> <speed> <count> normal <viewers>
+playsound <sound> ambient <targets>
+playsound <sound> ambient <targets> <pos>
+playsound <sound> ambient <targets> <pos> <volume>
+playsound <sound> ambient <targets> <pos> <volume> <pitch>
+playsound <sound> ambient <targets> <pos> <volume> <pitch> <minVolume>
+playsound <sound> block <targets>
+playsound <sound> block <targets> <pos>
+playsound <sound> block <targets> <pos> <volume>
+playsound <sound> block <targets> <pos> <volume> <pitch>
+playsound <sound> block <targets> <pos> <volume> <pitch> <minVolume>
+playsound <sound> hostile <targets>
+playsound <sound> hostile <targets> <pos>
+playsound <sound> hostile <targets> <pos> <volume>
+playsound <sound> hostile <targets> <pos> <volume> <pitch>
+playsound <sound> hostile <targets> <pos> <volume> <pitch> <minVolume>
+playsound <sound> master <targets>
+playsound <sound> master <targets> <pos>
+playsound <sound> master <targets> <pos> <volume>
+playsound <sound> master <targets> <pos> <volume> <pitch>
+playsound <sound> master <targets> <pos> <volume> <pitch> <minVolume>
+playsound <sound> music <targets>
+playsound <sound> music <targets> <pos>
+playsound <sound> music <targets> <pos> <volume>
+playsound <sound> music <targets> <pos> <volume> <pitch>
+playsound <sound> music <targets> <pos> <volume> <pitch> <minVolume>
+playsound <sound> neutral <targets>
+playsound <sound> neutral <targets> <pos>
+playsound <sound> neutral <targets> <pos> <volume>
+playsound <sound> neutral <targets> <pos> <volume> <pitch>
+playsound <sound> neutral <targets> <pos> <volume> <pitch> <minVolume>
+playsound <sound> player <targets>
+playsound <sound> player <targets> <pos>
+playsound <sound> player <targets> <pos> <volume>
+playsound <sound> player <targets> <pos> <volume> <pitch>
+playsound <sound> player <targets> <pos> <volume> <pitch> <minVolume>
+playsound <sound> record <targets>
+playsound <sound> record <targets> <pos>
+playsound <sound> record <targets> <pos> <volume>
+playsound <sound> record <targets> <pos> <volume> <pitch>
+playsound <sound> record <targets> <pos> <volume> <pitch> <minVolume>
+playsound <sound> voice <targets>
+playsound <sound> voice <targets> <pos>
+playsound <sound> voice <targets> <pos> <volume>
+playsound <sound> voice <targets> <pos> <volume> <pitch>
+playsound <sound> voice <targets> <pos> <volume> <pitch> <minVolume>
+playsound <sound> weather <targets>
+playsound <sound> weather <targets> <pos>
+playsound <sound> weather <targets> <pos> <volume>
+playsound <sound> weather <targets> <pos> <volume> <pitch>
+playsound <sound> weather <targets> <pos> <volume> <pitch> <minVolume>
+publish
+publish <port>
+recipe give <targets> *
+recipe give <targets> <recipe>
+recipe take <targets> *
+recipe take <targets> <recipe>
+reload
+replaceitem block <pos> <slot> <item>
+replaceitem block <pos> <slot> <item> <count>
+replaceitem entity <targets> <slot> <item>
+replaceitem entity <targets> <slot> <item> <count>
+save-all
+save-all flush
+save-off
+save-on
+say <message>
+scoreboard objectives add <objective> <criteria>
+scoreboard objectives add <objective> <criteria> <displayName>
+scoreboard objectives list
+scoreboard objectives remove <objective>
+scoreboard objectives setdisplay <slot>
+scoreboard objectives setdisplay <slot> <objective>
+scoreboard players add <targets> <objective> <score>
+scoreboard players enable <targets> <objective>
+scoreboard players get <target> <objective>
+scoreboard players list
+scoreboard players list <target>
+scoreboard players operation <targets> <targetObjective> <operation> <source> <sourceObjective>
+scoreboard players remove <targets> <objective> <score>
+scoreboard players reset <targets>
+scoreboard players reset <targets> <objective>
+scoreboard players set <targets> <objective> <score>
+seed
+setblock <pos> <block>
+setblock <pos> <block> destroy
+setblock <pos> <block> keep
+setblock <pos> <block> replace
+setidletimeout <seconds>
+setworldspawn
+setworldspawn <pos>
+spawnpoint
+spawnpoint <targets>
+spawnpoint <targets> <pos>
+spreadplayers <center> <spreadDistance> <maxRange> <respectTeams> <targets>
+stop
+stopsound <targets>
+stopsound <targets> * <sound>
+stopsound <targets> ambient
+stopsound <targets> ambient <sound>
+stopsound <targets> block
+stopsound <targets> block <sound>
+stopsound <targets> hostile
+stopsound <targets> hostile <sound>
+stopsound <targets> master
+stopsound <targets> master <sound>
+stopsound <targets> music
+stopsound <targets> music <sound>
+stopsound <targets> neutral
+stopsound <targets> neutral <sound>
+stopsound <targets> player
+stopsound <targets> player <sound>
+stopsound <targets> record
+stopsound <targets> record <sound>
+stopsound <targets> voice
+stopsound <targets> voice <sound>
+stopsound <targets> weather
+stopsound <targets> weather <sound>
+summon <entity>
+summon <entity> <pos>
+summon <entity> <pos> <nbt>
+tag <targets> add <name>
+tag <targets> list
+tag <targets> remove <name>
+team add <team>
+team add <team> <displayName>
+team empty <team>
+team join <team>
+team join <team> <members>
+team leave <members>
+team list
+team list <team>
+team option <team> collisionRule always
+team option <team> collisionRule never
+team option <team> collisionRule pushOtherTeams
+team option <team> collisionRule pushOwnTeam
+team option <team> color <value>
+team option <team> deathMessageVisibility always
+team option <team> deathMessageVisibility hideForOtherTeams
+team option <team> deathMessageVisibility hideForOwnTeam
+team option <team> deathMessageVisibility never
+team option <team> friendlyfire <allowed>
+team option <team> nametagVisibility always
+team option <team> nametagVisibility hideForOtherTeams
+team option <team> nametagVisibility hideForOwnTeam
+team option <team> nametagVisibility never
+team option <team> seeFriendlyInvisibles <allowed>
+team remove <team>
+teleport <destination>
+teleport <location>
+teleport <location> <rotation>
+teleport <targets> <destination>
+teleport <targets> <location>
+teleport <targets> <location> <rotation>
+tell -> msg
+tellraw <targets> <message>
+time add <time>
+time query day
+time query daytime
+time query gametime
+time set day
+time set night
+time set <time>
+title <targets> actionbar <title>
+title <targets> clear
+title <targets> reset
+title <targets> subtitle <title>
+title <targets> times <fadeIn> <stay> <fadeOut>
+title <targets> title <title>
+tp -> teleport
+trigger <objective>
+trigger <objective> add <value>
+trigger <objective> set <value>
+w -> msg
+weather clear
+weather clear <duration>
+weather rain
+weather rain <duration>
+weather thunder
+weather thunder <duration>
+whitelist add <targets>
+whitelist list
+whitelist off
+whitelist on
+whitelist reload
+whitelist remove <targets>
+worldborder add <distance>
+worldborder add <distance> <time>
+worldborder center <pos>
+worldborder damage amount <damagePerBlock>
+worldborder damage buffer <distance>
+worldborder get
+worldborder set <distance>
+worldborder set <distance> <time>
+worldborder warning distance <distance>
+worldborder warning time <time>
+xp -> experience

@@ -1,17 +1,1 @@
-
-
-
-html,body{
-	margin: 0px;
-	padding: 0px;
-	font-family: Helvetica, Gotham, "Helvetica Neue", Arial, "sans-serif";
-
-
-
-}
-body{
-	height: 100vh;
-}
-#rClick-Menu{
-	display: none;
-}
+html,body{	margin: 0px;	padding: 0px;	font-family: Helvetica, Gotham, "Helvetica Neue", Arial, "sans-serif";}body{	height: 100vh;}#rClick-Menu{	display: none;}#textarea{	width: calc(100% - 7px);	height: calc(100% - 7px)}
